@@ -8,7 +8,7 @@ Plain HTML5 and CSS. No build step, no JavaScript, no tracking. Upload the files
 
 | Path | What it is |
 | --- | --- |
-| `index.html` | Main page: About, Coming up, FAQ, Links |
+| `index.html` | Main page: About, Coming up, FAQ, Contact |
 | `the-pony/index.html` | The Pony comics, newest first |
 | `css/style.css` | All styling. Phone first, widened for bigger screens |
 | `fonts/` | Lora (the logo's typeface), served from the site itself. `OFL.txt` is its licence |
