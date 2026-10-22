@@ -1,0 +1,236 @@
+/* Brissy Pub Chess website styles.
+   Phone first: the base rules are for a narrow screen, and the media
+   queries at the bottom widen the layout for tablets and computers. */
+
+@font-face {
+  font-family: "Lora";
+  src: url("../fonts/lora-latin-wght-normal.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --green: #014425;      /* the brand green, measured from the logo */
+  --green-light: #0b5a35;
+  --white: #ffffff;
+  --white-soft: #d9e6df;
+  --max-width: 48rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--green);
+  color: var(--white);
+  font-family: "Lora", Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--white);
+  text-underline-offset: 0.2em;
+}
+
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--white);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--white);
+  color: var(--green);
+  padding: 0.5rem 1rem;
+}
+
+/* Header and menu */
+
+.site-header {
+  text-align: center;
+  padding: 1.5rem 1rem 0;
+}
+
+.site-header .logo {
+  width: 11rem;
+  margin: 0 auto;
+}
+
+.site-nav ul {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem 0.5rem;
+}
+
+.site-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.75rem;   /* comfortable tap target on a phone */
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+.site-nav .quiet {
+  color: var(--white-soft);
+  font-size: 0.95rem;
+}
+
+/* Content */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+section {
+  padding-top: 1.5rem;
+  scroll-margin-top: 1rem;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 1rem 0 0.75rem;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.6rem;
+  border-bottom: 1px solid var(--green-light);
+  padding-bottom: 0.25rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+}
+
+.events {
+  list-style: none;
+  padding: 0;
+}
+
+.events li {
+  border: 1px solid var(--white-soft);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.events strong {
+  display: block;
+  font-size: 1.25rem;
+}
+
+/* FAQ uses the built-in <details> element, so it opens and closes
+   without any JavaScript. */
+
+.faq details {
+  border-bottom: 1px solid var(--green-light);
+}
+
+.faq summary {
+  cursor: pointer;
+  font-weight: 700;
+  padding: 0.75rem 0;
+  min-height: 2.75rem;
+}
+
+.faq details p {
+  margin: 0 0 1rem;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  padding: 0.25rem 0;
+}
+
+.links a {
+  display: inline-block;
+  min-height: 2.75rem;
+  padding: 0.5rem 0;
+}
+
+/* The Pony */
+
+.comic {
+  margin: 0 0 2.5rem;
+}
+
+.comic figcaption {
+  color: var(--white-soft);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Footer */
+
+.site-footer {
+  text-align: center;
+  color: var(--white-soft);
+  font-size: 0.95rem;
+  padding: 1.5rem 1rem 2rem;
+  border-top: 1px solid var(--green-light);
+}
+
+.site-footer a {
+  color: var(--white-soft);
+}
+
+/* Wider screens */
+
+@media (min-width: 40rem) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .site-header .logo {
+    width: 14rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
