@@ -19,13 +19,7 @@ The logo and full-size comics live in [brissy-pub-chess-artwork](https://github.
 
 ## Previewing it
 
-The links use folder addresses (`the-pony/`), which need a web server rather than double-clicking the file. From this folder:
-
-```
-npx serve .
-```
-
-Then open the address it prints.
+Double-click `index.html` to open it in a browser. Every link points at an actual file, so the whole site works straight from the folder, with no web server needed. The one exception is `404.html`, which only does its job on a real host.
 
 ## Adding a Pony comic
 
