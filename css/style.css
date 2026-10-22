@@ -103,11 +103,6 @@ summary:focus-visible {
   text-decoration: underline;
 }
 
-.site-nav .quiet {
-  color: var(--white-soft);
-  font-size: 0.95rem;
-}
-
 /* Content */
 
 main {
