@@ -10,6 +10,7 @@ Plain HTML5 and CSS. No build step, no JavaScript, no tracking. Upload the files
 | --- | --- |
 | `index.html` | Main page: About, Coming up, FAQ, Contact |
 | `the-pony/index.html` | The Pony comics, newest first |
+| `404.html` | Shown when someone goes to an address that doesn't exist. Most static hosts (GitHub Pages, Netlify, Cloudflare Pages) use a root `404.html` automatically; others need setting up |
 | `css/style.css` | All styling. Phone first, widened for bigger screens |
 | `fonts/` | Lora (the logo's typeface), served from the site itself. `OFL.txt` is its licence |
 | `images/` | Logo, browser-tab icon, the comics, the photo of a chess night (`chess-night-*.webp`), and `share.jpg` (the picture shown when someone shares a link to the site) |

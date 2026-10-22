@@ -24,8 +24,12 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
+/* Smooth jumps between sections, unless the visitor has asked their
+   device to reduce motion. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 body {
@@ -72,6 +76,10 @@ summary:focus-visible {
 .site-header {
   text-align: center;
   padding: 1.5rem 1rem 0;
+}
+
+.site-title {
+  margin: 0;
 }
 
 .site-header .logo {
