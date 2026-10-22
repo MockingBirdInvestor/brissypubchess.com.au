@@ -12,7 +12,7 @@ Plain HTML5 and CSS. No build step, no JavaScript, no tracking. Upload the files
 | `the-pony/index.html` | The Pony comics, newest first |
 | `css/style.css` | All styling. Phone first, widened for bigger screens |
 | `fonts/` | Lora (the logo's typeface), served from the site itself. `OFL.txt` is its licence |
-| `images/` | Logo, browser-tab icon, the comics, the photo of a chess night (`chess-night-*.webp`), and `share.png` (the picture shown when someone shares a link to the site) |
+| `images/` | Logo, browser-tab icon, the comics, the photo of a chess night (`chess-night-*.webp`), and `share.jpg` (the picture shown when someone shares a link to the site) |
 
 The logo and full-size comics live in [brissy-pub-chess-artwork](https://github.com/MockingBirdInvestor/brissy-pub-chess-artwork). This repo keeps only the copies the site uses.
 
