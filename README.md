@@ -27,8 +27,10 @@ Double-click `index.html` to open it in a browser. Every link points at an actua
 On a server with `make` and `rsync`, install from a checkout with:
 
 ```
-make install WEBROOT=/path/to/web/folder
+make install
 ```
+
+This installs into `/home/brissypubchess/htdocs/www.brissypubchess.com.au`, the host's folder for the site. To install somewhere else, add `WEBROOT=/path/to/web/folder`.
 
 It copies only the files the site serves (`index.html`, `404.html`, and the `the-pony`, `css`, `fonts` and `images` folders), so `.git`, `README.md`, `CLAUDE.md` and the `Makefile` never reach the web server. Files removed from the site are removed from the web folder too. Keep the checkout itself outside the web folder.
 
@@ -38,7 +40,7 @@ GitHub Pages, Netlify and Cloudflare Pages can also publish straight from this r
 
 GitHub Pages, Netlify and Cloudflare Pages all show a root `404.html` for missing pages with no extra setup ([GitHub](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site), [Netlify](https://docs.netlify.com/manage/routing/redirects/redirect-options/), [Cloudflare](https://developers.cloudflare.com/pages/configuration/serving-pages/)). Other hosts may need it set up.
 
-The pages assume the site's address is `https://brissypubchess.com.au/` (https, no www). It's written into the `canonical` and `og:` tags at the top of `index.html` and `the-pony/index.html`. If the host uses a different address, change it in both files.
+The pages give the site's address as `https://www.brissypubchess.com.au/`. The host serves the site at `brissypubchess.com.au` too, but the www address is the main one. It's written into the `canonical` and `og:` tags at the top of `index.html` and `the-pony/index.html`. If the host uses a different address, change it in both files.
 
 ## Making changes
 
