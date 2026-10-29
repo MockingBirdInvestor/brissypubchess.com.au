@@ -8,6 +8,7 @@ Instructions for Claude when changing this site. The README covers what the site
 - Every link points at an actual file (`the-pony/index.html`, not `the-pony/`), so the site works by double-clicking `index.html`. The exception is `404.html`, whose links start from the site root because it can be shown at any address.
 - Plain Australian English. Say "Register", never "Rego". Never invent jokes, facts or events.
 - Brand green is `#014425`; typeface is Lora, served from `fonts/`.
+- The `Makefile`'s `install` target lists the files the site serves (`FILES` and `DIRS`). A new top-level file or folder must be added there, or it won't be installed.
 - Check every change with `npx html-validate index.html the-pony/index.html 404.html`, and look at it at phone width (about 375px) and computer width.
 - Commits use Nicho's details: Nicho Cornish <n.k.cornish@gmail.com>. Work on a branch and open a pull request; merge only when Nicho says to.
 
