@@ -20,6 +20,7 @@ Most details appear in more than one place, all in `index.html`. Change every pl
 | --- | --- |
 | Night (Wednesday) | `description` and `og:description` at the top; About; Coming up; FAQ "When and where?" |
 | Venue and suburb | `<title>` and `og:title`; both descriptions; About; Coming up; FAQ "When and where?" |
+| Venue website link | About; Coming up; FAQ "When and where?" |
 | Street address | Coming up and FAQ "When and where?", in the link text and in the map link's `query=` |
 | Times | Coming up; FAQ "When and where?" |
 | Price | FAQ "How much?" |
