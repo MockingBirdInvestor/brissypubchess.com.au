@@ -1,13 +1,16 @@
 # Installs the website into a web server's folder.
 #
-#   make install WEBROOT=/var/www/brissypubchess.com.au
+#   make install
+#
+# Installs into WEBROOT, the host's folder for the site, unless another
+# folder is given with make install WEBROOT=/path/to/web/folder.
 #
 # Only the files the site serves are copied, so .git, README.md, CLAUDE.md
 # and this Makefile never end up on the web server. Files removed from the
 # site are removed from WEBROOT too. DESTDIR is honoured for staged
 # installs, as in the GNU coding standards.
 
-WEBROOT ?=
+WEBROOT ?= /home/brissypubchess/htdocs/www.brissypubchess.com.au
 FILES = index.html 404.html
 DIRS = the-pony css fonts images
 

@@ -27,8 +27,10 @@ Double-click `index.html` to open it in a browser. Every link points at an actua
 On a server with `make` and `rsync`, install from a checkout with:
 
 ```
-make install WEBROOT=/path/to/web/folder
+make install
 ```
+
+This installs into `/home/brissypubchess/htdocs/www.brissypubchess.com.au`, the host's folder for the site. To install somewhere else, add `WEBROOT=/path/to/web/folder`.
 
 It copies only the files the site serves (`index.html`, `404.html`, and the `the-pony`, `css`, `fonts` and `images` folders), so `.git`, `README.md`, `CLAUDE.md` and the `Makefile` never reach the web server. Files removed from the site are removed from the web folder too. Keep the checkout itself outside the web folder.
 
