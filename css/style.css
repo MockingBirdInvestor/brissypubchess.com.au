@@ -82,6 +82,17 @@ summary:focus-visible {
   margin: 0;
 }
 
+/* The place names sit inside the home page's h1, under the logo, so the
+   main heading names the suburb and city as text, not just as a picture. */
+.tagline {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--white-soft);
+}
+
 .site-header .logo {
   width: 11rem;
   margin: 0 auto;
