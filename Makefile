@@ -11,7 +11,7 @@
 # installs, as in the GNU coding standards.
 
 WEBROOT ?= /home/brissypubchess/htdocs/www.brissypubchess.com.au
-FILES = index.html 404.html
+FILES = index.html 404.html robots.txt sitemap.xml
 DIRS = the-pony css fonts images
 
 .PHONY: install
