@@ -9,6 +9,7 @@ Instructions for Claude when changing this site. The README covers what the site
 - Plain Australian English. Say "Register", never "Rego". Never invent jokes, facts or events.
 - Brand green is `#014425`; typeface is Lora, served from `fonts/`.
 - The `Makefile`'s `install` target lists the files the site serves (`FILES` and `DIRS`). A new top-level file or folder must be added there, or it won't be installed.
+- `sitemap.xml` lists every page by its canonical address. When a page's content changes, set its `<lastmod>` to the date and time of the change (ISO 8601, e.g. `2026-10-31T03:30:00+00:00`). Bing asks for this and warns against setting it when nothing changed ([Bing](https://blogs.bing.com/webmaster/July-2025/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search)). A new page gets a new `<url>` entry.
 - Check every change with `npx html-validate index.html the-pony/index.html 404.html`, and look at it at phone width (about 375px) and computer width.
 - Commits use Nicho's details: Nicho Cornish <n.k.cornish@gmail.com>. Work on a branch and open a pull request; merge only when Nicho says to.
 
@@ -42,6 +43,7 @@ Nicho makes a new comic and hands over the image. Add it to both repos in one go
    - `alt` to a plain description of the comic, including all its words;
    - the number in `<figcaption>`.
 4. Remove `loading="lazy"` from the new top comic and add it to the one that used to be on top, so the newest loads straight away.
+5. In `sitemap.xml`, set the Pony page's `<lastmod>` to now.
 
 ## One-off events
 

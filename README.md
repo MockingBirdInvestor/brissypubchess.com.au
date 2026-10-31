@@ -11,6 +11,7 @@ Plain HTML5 and CSS. No build step, no JavaScript, no tracking.
 | `index.html` | Main page: About, Coming up, FAQ, Contact |
 | `the-pony/index.html` | The Pony comic, newest first |
 | `404.html` | Shown when someone goes to an address that doesn't exist |
+| `robots.txt`, `sitemap.xml` | Tell search engines which pages the site has (see CLAUDE.md) |
 | `css/style.css` | All styling. Phone first, widened for bigger screens |
 | `fonts/` | Lora (the logo's typeface), served from the site itself. `OFL.txt` is its licence |
 | `images/` | Logo, browser-tab icon, the comics, the photo of a chess night (`chess-night-*.webp`), and `share.jpg` (the picture shown when someone shares a link to the site) |
@@ -32,7 +33,7 @@ make install
 
 This installs into `/home/brissypubchess/htdocs/www.brissypubchess.com.au`, the host's folder for the site. To install somewhere else, add `WEBROOT=/path/to/web/folder`.
 
-It copies only the files the site serves (`index.html`, `404.html`, and the `the-pony`, `css`, `fonts` and `images` folders), so `.git`, `README.md`, `CLAUDE.md` and the `Makefile` never reach the web server. Files removed from the site are removed from the web folder too. Keep the checkout itself outside the web folder.
+It copies only the files the site serves (`index.html`, `404.html`, `robots.txt`, `sitemap.xml`, and the `the-pony`, `css`, `fonts` and `images` folders), so `.git`, `README.md`, `CLAUDE.md` and the `Makefile` never reach the web server. Files removed from the site are removed from the web folder too. Keep the checkout itself outside the web folder.
 
 Without `make`, upload those same files and folders by hand, keeping the folder layout.
 
